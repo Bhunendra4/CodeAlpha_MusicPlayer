@@ -1,0 +1,93 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e1eec3, #f05053);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.player-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #f05053;
+}
+
+.playlist h3 {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+#song-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#song-list li {
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#song-list li:hover {
+  background-color: #f9f9f9;
+  color: #f05053;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  background: #f05053;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 18px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: #d43f4e;
+}
+
+input[type="range"] {
+  width: 100px;
+  margin-top: 10px;
+  accent-color: #f05053;
+}
+
+audio {
+  display: none;
+}
